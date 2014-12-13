@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css"/><!--Bootstrap CSS-->
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="js/bootstrap.js"></script><!--Bootstrap JS-->
+  	
+	<title>TeleConnect | Product</title>
+</head>
+<body>
+	<header class="cd-header">
+		<!--Logo Image-->
+		<a href="#0" class="cd-logo">
+			<img src="img/cd-logo.svg" alt="Logo">
+		</a>
+		<!--Logo End-->
+		<a href="#0" class="cd-3d-nav-trigger" id="home">
+			Menu
+			<span></span>
+		</a>
+	</header> <!-- .cd-header -->
+	
+	<!--Main Content-->
+	<main>
+		<h1>Our Product</h1>
+		<!-- all your content here -->
+		</main>
+	
+	<!--NavBar Contents-->
+	<nav class="cd-3d-nav-container">
+		<ul class="cd-3d-nav">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+
+			<li class="cd-selected">
+				<a href="#0">Product</a>
+			</li>
+
+			<li>
+				<a href="about.html">About</a>
+			</li>
+
+			<li>
+				<a href="contact.html">Contact Us</a>
+			</li>
+
+			<li>
+				<a href="#0">Purchase</a>
+			</li>
+		</ul> <!-- .cd-3d-nav -->
+	</nav> <!-- .cd-3d-nav-container -->
+	<!--End NavBar-->
+
+	<!--Scripts-->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/jquery.slides.min.js"></script><!--Slides jQuery-->
+	<!--Smooth Scroll-->
+<script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+</script>
+
+	<!--Fade on Scroll-->
+<script>
+	$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();		            
+            /* If the object is completely visible in the window, fade it in */
+            if( bottom_of_window > bottom_of_object ){		                
+                $(this).animate({'opacity':'1'},1000);		                    
+            }   
+        }); 		    
+    });		    
+});
+</script>
+</body>
+</html>

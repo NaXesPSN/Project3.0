@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css"/><!--Bootstrap CSS-->
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/confirm.css"> 
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="js/bootstrap.js"></script><!--Bootstrap JS-->
+  	
+	<title>TeleConnect | Contact</title>
+</head>
+<body>
+	<header class="cd-header">
+		<!--Logo Image-->
+		<a href="#0" class="cd-logo logo">
+			<img src="img/TeleConnect.png" alt="Logo" class="img-responsive" width="100%">
+		</a>
+		<!--Logo End-->
+		<a href="#0" class="cd-3d-nav-trigger" id="home">
+			Menu
+			<span></span>
+		</a>
+	</header> <!-- .cd-header -->
+	
+	<!--Main Content-->
+	<main>
+		<h1>Contact Us</h1>
+		<!-- all your content here -->
+		<div class="alt1 padding">
+			<div class="container">
+			<div class="row">
+		  	<form role="form" action="" method="post" >
+		    <div class="col-lg-6">
+		      <div class="well well-sm"><strong><i class="glyphicon glyphicon-ok"></i> Required Field</strong></div>
+		      <div class="form-group">
+		        <label for="InputName">Your Name</label>
+		        <div class="input-group">
+		          <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+		          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+		      </div>
+		      <div class="form-group">
+		        <label for="InputEmail">Your Email</label>
+		        <div class="input-group">
+		          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+		          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+		      </div>
+		      <div class="form-group">
+		        <label for="InputMessage">Message</label>
+		        <div class="input-group"
+		>
+		          <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+		          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+		      </div>
+		      <div class="form-group">
+		        <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
+		        <div class="input-group">
+		          <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+		          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+		      </div>
+		       <div class="col-md-12 padding">
+					<div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div>	  
+				    <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs. (If form error!)</strong></div>
+				</div>
+		  </form>
+		</div>
+		</div>
+		</div>
+		<a href="#0" class="cd-popup-trigger">Submit</a>
+		<!--Footer-->
+		<div class="alt3">
+			<div class="container">
+				<footer>&copy; TeleConnect<br /><a href="#home" id="BTT">Back to top</a></footer>
+			</div>
+		</div>
+	<!--End of Page-->
+	</main>
+
+	<div class="cd-popup" role="alert">
+		<div class="cd-popup-container">
+			<p>Are you sure you want to submit this message?</p>
+			<ul class="cd-buttons">
+				<li><a href="contact.html">Yes</a></li>
+				<li><a href="contact.html">No</a></li>
+			</ul>
+			<a href="#0" class="cd-popup-close img-replace">Close</a>
+		</div> <!-- cd-popup-container -->
+	</div> <!-- cd-popup -->
+	
+	<!--NavBar Contents-->
+	<nav class="cd-3d-nav-container">
+		<ul class="cd-3d-nav">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+
+			<li>
+				<a href="product.html">Product</a>
+			</li>
+
+			<li>
+				<a href="about.html">About</a>
+			</li>
+
+			<li class="cd-selected">
+				<a href="#0">Contact Us</a>
+			</li>
+
+			<li>
+				<a href="#0">Purchase</a>
+			</li>
+		</ul> <!-- .cd-3d-nav -->
+	</nav> <!-- .cd-3d-nav-container -->
+	<!--End NavBar-->
+
+	<!--Scripts-->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/jquery.slides.min.js"></script><!--Slides jQuery-->
+	<!--Smooth Scroll-->
+<script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+</script>
+
+	<!--Fade on Scroll-->
+<script>
+	$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();		            
+            /* If the object is completely visible in the window, fade it in */
+            if( bottom_of_window > bottom_of_object ){		                
+                $(this).animate({'opacity':'1'},1000);		                    
+            }   
+        }); 		    
+    });		    
+});
+</script>
+</body>
+</html>
