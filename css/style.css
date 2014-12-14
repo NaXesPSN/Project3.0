@@ -71,8 +71,20 @@ h1{
   margin: 1em auto;
 }
 
+.colSubContact{
+  color: #fff;
+  font-size: 30px;
+  margin: 1em auto;
+}
+
 .colCont{
   color: #fff;
+  font-weight: lighter;
+}
+
+.colContact{
+  color: #fff;
+  font-size: 20px;
   font-weight: lighter;
 }
 

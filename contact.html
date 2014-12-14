@@ -32,80 +32,81 @@
 	<main>
 		<h1>Contact Us</h1>
 		<!-- all your content here -->
-			<div class="alt2">
+		<div class="alt2 padding">
 			<div class="container">
-			<div class="row-lg-8">
 				<div class="row">
-					<div class="row-md-4 secCol1 padding">
-							<div id="c1">
-								<h1>LOCATION & TRANSPORT</h1>
-								<p class="text-center"><u>Address</u>: Building 4 Avondale, Grafton Street, Dublin 2, Co. Dublin<br/>
-								<u>Transport</u>: Buses 1, 9, 16, 40, 123, 140</p><br />
-								<img src="./dark/appbar.location.checkin.png" class="img-responsive iconRespon" alt="checkin" width="15%"/>
-							</div>
-							<div id="c2">
-								<h1>PHONE & FAX</h1>
-								<p class="text-center"><u>Telephone</u>: 01 5843973<br/>
-								<u>FAX</u>: +353 1 7820249<br/></p><br />
-								<img src="./dark/appbar.phone.png" class="img-responsive iconRespon" alt="phone" width="15%"/>
-							</div>
-							<div id="c3">
-								<h1>E-MAIL</h1>
-								<p class="text-center">TeleConnect@gmail.ie</p><br />
-								<img src="./dark/appbar.email.png" class="img-responsive iconRespon" alt="email" width="15%"/>
-							</div>
-							<div id="c4">
-								<h1>OPENING HOURS</h1>
-								<p class="text-center"><u>Mon-Fri</u>: 9am - 6pm<br/>
-								<u>Sat-Sun</u>: 12am - 5pm</p><br />
-								<img src="./dark/appbar.clock.png" class="img-responsive iconRespon" alt="clock" width="15%"/>
-							</div>
+					<h3 class="text-center padding colContact" id="SubHead product">OUR CONTACT INFO</h3>
+					<div class="col-md-6">
+						<img src="./dark/appbar.location.checkin.png" class="img-responsive iconRespon" alt="checkin" width="15%"/>
+						<h2 class="text-center colSubContact">Location & Transport</h2>
+						<p class="text-center colContact"><u>Address</u>: Building 4 Avondale, Grafton Street, Dublin 2, Co. Dublin<br/>
+						<u>Transport</u>: Buses 1, 9, 16, 40, 123, 140</p><br/>
+					</div>
+					<div class="col-md-6">
+						<img src="./dark/appbar.phone.png" class="img-responsive iconRespon" alt="phone" width="15%"/>
+						<h2 class="text-center colSubContact">Phone & Fax</h2>
+						<p class="text-center colContact"><u>Telephone</u>: 01 5843973<br/>
+						<u>FAX</u>: +353 1 7820249<br/></p><br />
 					</div>
 				</div>
-			</div>
+				<div class="row">
+					<div class="col-md-6">
+						<img src="./dark/appbar.email.png" class="img-responsive iconRespon" alt="email" width="15%"/>
+						<h2 class="text-center colSubContact">Email</h2>
+						<p class="text-center colContact">TeleConnect@gmail.com</p>
+					</div>
+					<div class="col-md-6">
+						<img src="./dark/appbar.clock.png" class="img-responsive iconRespon" alt="clock" width="15%"/>
+						<h2 class="text-center colSubContact">Opening Hours</h2>
+						<p class="text-center colContact"><u>Mon-Fri</u>: 9am - 6pm<br/>
+						<u>Sat-Sun</u>: 12am - 5pm</p><br />
+					</div>
+				</div>
 			</div>
 		</div>
 		
 		<div class="alt1 padding">
 			<div class="container">
-			<div class="row">
-		  	<form role="form" action="" method="post" >
-		    <div class="col-lg-6">
-				<h1>CUSTOMER REVIEW FORM</h1>
-		      <div class="well well-sm"><strong><i class="glyphicon glyphicon-ok"></i> Required Field</strong></div>
-		      <div class="form-group">
-		        <label for="InputName">Full Name</label>
-		        <div class="input-group">
-		          <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Your Name" required>
-		          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-		      </div>
-		      <div class="form-group">
-		        <label for="InputEmail">E-mail</label>
-		        <div class="input-group">
-		          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Your Email" required  >
-		          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-		      </div>
-		      <div class="form-group">
-		        <label for="InputMessage">Comments</label>
-		        <div class="input-group">
-		          <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
-		          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-		      </div>
-		      <div class="form-group">
-		        <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
-		        <div class="input-group">
-		          <input type="text" class="form-control" name="InputReal" id="InputReal" required>
-		          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-		      </div>
-		       <div class="col-md-12 padding">
-					<div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div>	  
-				    <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs. (If form error!)</strong></div>
+				<div class="row">
+				  	<form role="form" action="" method="post" >
+				    <div class="col-lg-6">
+						<h1>CUSTOMER REVIEW FORM</h1>
+				      <div class="well well-sm hideme"><strong><i class="glyphicon glyphicon-ok"></i> Required Field</strong></div>
+				      <div class="form-group">
+				        <label for="InputName" class="hideme">Full Name</label>
+				        <div class="input-group hideme">
+				          <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Your Name" required>
+				          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+				      </div>
+				      <div class="form-group">
+				        <label for="InputEmail" class="hideme">E-mail</label>
+				        <div class="input-group hideme">
+				          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Your Email" required  >
+				          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+				      </div>
+				      <div class="form-group">
+				        <label for="InputMessage" class="hideme">Comments</label>
+				        <div class="input-group">
+				          <textarea name="InputMessage" id="InputMessage" class="form-control hideme" rows="5" required></textarea>
+				          <span class="input-group-addon hideme"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+				      </div>
+				      <div class="form-group">
+				        <label for="InputReal" class="hideme">What is 4+3? (Simple Spam Checker)</label>
+				        <div class="input-group hideme">
+				          <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+				          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+				      </div>
+				    </div>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="./img/placeholder.png" class="img-responsive secColCont" alt="placeholder" />
+				    	</div>
+				    </div>
+				    <a href="#0" class="cd-popup-trigger">Submit</a>
+				  </form>
 				</div>
-		  </form>
+			</div>
 		</div>
-		</div>
-		</div>
-		<a href="#0" class="cd-popup-trigger">Submit</a>
 		
 		<!--Footer-->
 		<div class="alt3">
@@ -152,6 +153,67 @@
 		</ul> <!-- .cd-3d-nav -->
 	</nav> <!-- .cd-3d-nav-container -->
 	<!--End NavBar-->
+
+	<!--Media Queries-->
+	<style>
+   /* For tablets & smart phones */
+		    @media (max-width: 767px) {
+		      .container {
+		        width: auto
+		      }
+		      .secCol1{
+		      	display: none;
+		      }
+		      .houseConnect{
+		      	width: 30%;
+		      }
+		      .iconRespon{
+		      	width: 20%;
+		      }
+		      .logo{
+		      	width: 50%;
+		      }
+		    }
+
+		    /* For smartphones */
+		    @media (max-width: 480px) {
+		      .container {
+		        width: auto
+		      }
+		      .secColCont{
+		      	display: none;
+		      }
+		      .houseConnect{
+		      	width: 50%;
+		      }
+		     .btn-xlarge{
+		      	font-size:20px;
+		      }
+		      .logo{
+		      	width: 70%;
+		      }
+		    }
+
+		    /* For smaller displays like laptops */
+		    @media (min-width: 768px) and (max-width: 979px) {
+		      .container {
+		        width: 724px
+		      }
+		       .iconRespon{
+		      	width: 20%;
+		      }
+		       .secColCont{
+		      	display: none;
+		      }
+		    }
+
+		    /* For larger displays */
+		    @media (min-width: 1200px) {
+		      .container {
+		        width: 1170px
+		      }
+		    }
+  		</style>
 
 	<!--Scripts-->
 <script src="js/jquery-2.1.1.js"></script>
