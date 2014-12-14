@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<link rel="stylesheet" type="text/css" href="assets/css/notifyme.css" /><!--Notification Plugin-->
+	<link rel="stylesheet" href="css/unslider.css"><!--Unslide CSS-->
 	<link rel="stylesheet" type="text/css" href="css/jquery.powertip.css" /><!--ToolTip CSS-->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 	<script src="js/bootstrap.js"></script><!--Bootstrap JS-->
@@ -30,10 +31,40 @@
 	
 	<!--Main Content-->
 	<main>
-		<h1>An Experience</h1>
 		<!-- all your content here -->
+		
+	<!--Unslider-->
+	<h1></h1>
+<div class="banner">
+    <ul>
+        <li style="background-image: url('img/shop.jpg');">
+			<div class="inner">
+				<h1>An Experience</h1>
+				<p>Give your TV new life with TeleConnect</p>
+
+				<a class="btn" href="#info">More Info</a>
+			</div>
+		</li>
+		<li style="background-image: url('img/sunset.jpg');">
+			<div class="inner">
+				<h1>An Affordable Price & Simple Setup</h1>
+				<p>It's a Television Revolution!</p>
+
+				<a class="btn" href="product.html">More Info</a>
+			</div>
+		</li>
+		<li style="background-image: url('img/subway.jpg');">
+			<div class="inner">
+				<h1>Uh, that’s about it.</h1>
+				<p>I just wanted to show you another slide.</p>
+
+				<a class="btn" href="purchase.html">Go to Purchase Page</a>
+			</div>
+		</li>
+    </ul>
+</div>
+	<!--End of Unslider-->
 			<div class="container padding">
-				<h2 class="text-center" id="MainHead">TELECONNECT</h2>
 				<h3 class="text-center" id="SubHead">RENEWED LIFE FOR YOUR TV</h3>
 				<p class="text-center" id="HeadCont">The Smart TV experience for an affordable price</p>
 				<p class="text-center padding" id="product"><a class="btn btn-xlarge btn-primary">Buy Now</a></p>
@@ -41,9 +72,9 @@
 
 		<!--Col 1-->
 		<div class="alt1 padding">
-			<div class="container">
-				<div class="row">
-					<h3 class="text-center padding colHeading" id="SubHead product">YOUR PERSONALISED SERVICES WHEREVER YOU GO</h3>
+			<div class="container hideme">
+				<div class="row" id="info">
+					<h3 class="text-center padding colHeading hideme" id="SubHead">YOUR PERSONALISED SERVICES WHEREVER YOU GO</h3>
 					<div class="col-md-3 hideme">
 						<img src="./dark/appbar.connect.png" class="img-responsive iconRespon" alt="AppBar" width="30%"/>
 						<h2 class="text-center colSub">Connect</h2>
@@ -188,6 +219,7 @@
 <script type="text/javascript" src="assets/js/jquery.js"></script>
 <script type="text/javascript" src="assets/js/notifyme.js"></script>
 <script type="text/javascript" src="js/jquery.powertip.js"></script>
+<script src="js/unslider.js"></script> <!-- Unslider-->
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 
 	<!--Smooth Scroll-->
@@ -222,7 +254,7 @@
             var bottom_of_window = $(window).scrollTop() + $(window).height();		            
             /* If the object is completely visible in the window, fade it in */
             if( bottom_of_window > bottom_of_object ){		                
-                $(this).animate({'opacity':'1'},1000);		                    
+                $(this).animate({'opacity':'1'},2000);		                    
             }   
         }); 		    
     });		    
@@ -255,6 +287,22 @@
 		});
 	});
 	</script>
+
+	<!--Unslider-->
+	<script>
+		$(function() {
+	    $('.banner').unslider();
+	});
+	$('.banner').unslider({
+		speed: 500,               //  The speed to animate each slide (in milliseconds)
+		delay: 3000,              //  The delay between slide animations (in milliseconds)
+		complete: function() {},  //  A function that gets called after every slide animation
+		keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+		dots: true,               //  Display dot navigation
+		fluid: false              //  Support responsive design. May break non-responsive designs
+	});
+	</script>
+	<!--End of Unslider-->
 
 	<!--ToolTips-->
 <script type="text/javascript">
