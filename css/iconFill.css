@@ -96,8 +96,8 @@ header {
   position: relative;
   height: 50%;
   background-color: #3e253c;
-  z-index: 2;
 }
+
 header h1 {
   position: absolute;
   left: 50%;
