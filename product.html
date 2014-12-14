@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css"/><!--Bootstrap CSS-->
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/iconFill.css">
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 	<script src="js/bootstrap.js"></script><!--Bootstrap JS-->
   	
@@ -25,13 +26,40 @@
 			Menu
 			<span></span>
 		</a>
+		<h1 class="title">Our Product</h1>
 	</header> <!-- .cd-header -->
-	
-	<!--Main Content-->
 	<main>
-		<h1>Our Product</h1>
-		<!-- all your content here -->
-		</main>
+		<ul class="cd-container">
+		<li class="cd-service cd-service-divider"></li>
+
+		<li class="cd-service cd-service-1">
+			<h2>Designed to Perfection</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis pariatur tenetur quod veritatis nulla aspernatur architecto! Fugit, reprehenderit amet deserunt molestiae ut libero facere quasi velit perferendis ullam quis necessitatibus!</p>
+		</li> <!-- cd-service -->
+
+		<li class="cd-service cd-service-2">
+			<h2>Cutting Edge Technology</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis pariatur tenetur quod veritatis nulla aspernatur architecto! Fugit, reprehenderit amet deserunt molestiae ut libero facere quasi velit perferendis ullam quis necessitatibus!</p>
+		</li> <!-- cd-service -->
+
+		<li class="cd-service cd-service-3">
+			<h2>International Online Store</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis pariatur tenetur quod veritatis nulla aspernatur architecto! Fugit, reprehenderit amet deserunt molestiae ut libero facere quasi velit perferendis ullam quis necessitatibus!</p>
+		</li> <!-- cd-service -->
+
+		<li class="cd-service cd-service-4">
+			<h2>Simple Setup</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis pariatur tenetur quod veritatis nulla aspernatur architecto! Fugit, reprehenderit amet deserunt molestiae ut libero facere quasi velit perferendis ullam quis necessitatibus!</p>
+		</li> <!-- cd-service -->
+
+	
+	</ul> <!-- cd-services -->
+</main>
+
+	<div style="font-size:10px">
+		<footer class="text-center">&copy; TeleConnect<br /><a href="#home" id="BTT">Back to top</a></footer>
+	</div>
+
 	
 	<!--NavBar Contents-->
 	<nav class="cd-3d-nav-container">
@@ -58,6 +86,77 @@
 		</ul> <!-- .cd-3d-nav -->
 	</nav> <!-- .cd-3d-nav-container -->
 	<!--End NavBar-->
+
+	<!--Media Queries-->
+		<style>
+		    /* For tablets & smart phones */
+		    @media (max-width: 767px) {
+		      .container {
+		        width: auto
+		      }
+		      .secCol1{
+		      	display: none;
+		      }
+		      .houseConnect{
+		      	width: 30%;
+		      }
+		      .iconRespon{
+		      	width: 20%;
+		      }
+		      .logo{
+		      	width: 50%;
+		      }
+		      .colCont{
+		      	font-size: 20px;
+		      }
+		    }
+
+		    /* For smartphones */
+		    @media (max-width: 480px) {
+		      .container {
+		        width: auto
+		      }
+		      .secCol1{
+		      	display: none;
+		      }
+		      .houseConnect{
+		      	width: 50%;
+		      }
+		     .btn-xlarge{
+		      	font-size:20px;
+		      }
+		      .logo{
+		      	width: 70%;
+		      }
+		      .colCont{
+		      	font-size: 20px;
+		      }
+		    }
+
+		    /* For smaller displays like laptops */
+		    @media (min-width: 768px) and (max-width: 979px) {
+		      .container {
+		        width: 724px
+		      }
+		       .iconRespon{
+		      	width: 20%;
+		      }
+		       .secCol1{
+		      	display: none;
+		      }
+		      .colCont{
+		      	font-size: 20px;
+		      }
+		    }
+
+		    /* For larger displays */
+		    @media (min-width: 1200px) {
+		      .container {
+		        width: 1170px
+		      }
+		    }
+  		</style>
+  		<!--End of Media Queries-->	
 
 	<!--Scripts-->
 <script src="js/jquery-2.1.1.js"></script>

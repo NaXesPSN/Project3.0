@@ -153,6 +153,14 @@ label{
   font-weight: lighter;
 }
 
+.title{
+  color: #fff;
+  font-size: 35px;
+  font-family: Open Sans;
+  font-weight: lighter;
+  z-index: 1;
+}
+
 /*code for contact us*/
 #c1
 {
@@ -328,6 +336,7 @@ Main Components
   width: 100%;
   background-color: #000000;
   visibility: hidden;
+  z-index: 4;
   /* enable a 3D-space for children elements */
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
