@@ -77,7 +77,7 @@ h1{
 }
 
 .alt2{
-  background: #E6D0C1;
+  background: #1A2128;
   font-family: Segoe UI;
   min-height: 600px;
 }
@@ -85,6 +85,12 @@ h1{
 .secCol1{
   background: #1A2128;
   min-height: 600px;
+}
+
+.secCol1 p{
+ color: #E6E6E6;
+ font-family: century gothic;
+ font-weight: lighter;
 }
 
 .secColCont{
@@ -134,6 +140,48 @@ label{
   font-size: 20px;
   font-weight: lighter;
 }
+
+/*code for contact us*/
+#c1
+{
+margin: 0 auto;
+width:50%;
+height:250px;
+float: left;
+color: #E6E6E6;
+font-size: 16px;
+}
+
+#c2
+{
+margin: 0 auto;
+width:50%;
+height:250px;
+float: right;
+color: #E6E6E6;
+font-size: 16px;
+}
+
+#c3
+{
+margin: 0 auto;
+width:50%;
+height:250px;
+float: left;
+color: #E6E6E6;
+font-size: 16px;
+}
+
+#c4
+{
+margin: 0 auto;
+width:50%;
+height:250px;
+float: left;
+color: #E6E6E6;
+font-size: 16px;
+}
+
 /* -------------------------------- 
 
 Primary style
